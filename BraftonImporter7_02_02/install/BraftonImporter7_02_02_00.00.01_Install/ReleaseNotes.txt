@@ -1,0 +1,21 @@
+﻿<h3>BraftonImporterv7x</h3>
+<p class="Contributor">
+	Brafton.com <br />
+	<a href="mailto:frank.dumont@brafton.com">frank.dumont@brafton.com</a><br />
+	<a href=http://www.brafton.com>http://www.brafton.com</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About the BraftonImporterv7x</h3>
+	<p class="Owner">
+		<b>Version 7.0</b><br /><br />
+	</p>
+	<p>Description about version.</p>
+	
+	<h4>Tested Versions</h4>
+	<ul>
+			<li>7.02.02</li>
+
+	</ul>
+	
+</div>

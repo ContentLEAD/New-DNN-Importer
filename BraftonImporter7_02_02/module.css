@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------
+	
+	* Filename:				module.css
+	* Description: 			sets typography, basic grids, 
+							and standard formstyles for the Brafton Importer Module
+	* Version:				1.0.0 (2012-06-16)
+	* Author:				Frank Dumont
+	
+	== INDEX ===============================================
+	
+	$__generic classes		classes used globally, should be at bottom to prevent semantic inheritance
+	
+------------------------------------------------------------*/
+
+
+#braftonView h3{
+
+	padding-top: 20px;
+}
+
+#braftonView input[type="submit"]{
+
+		min-width: 135px ;
+		min-height: 30px;
+		/*background-color: #0c6aca;*/
+		background: linear-gradient(to bottom, #2d92ef 0%, #005cbd 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+		color: #fff;
+}

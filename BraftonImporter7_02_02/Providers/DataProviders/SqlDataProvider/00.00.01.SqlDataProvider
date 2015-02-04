@@ -1,0 +1,106 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}Brafton]') AND type in (N'U'))
+
+
+BEGIN
+
+CREATE TABLE Brafton
+(
+    Id int IDENTITY(1,1) NOT NULL,
+    Content nvarchar(MAX) NULL,
+	Api nvarchar(MAX) NULL,
+	BaseUrl nvarchar(MAX) NULL,
+	BlogId int NULL,
+	PortalId int NULL,
+	TabId int NULL,
+	DomainName nvarchar(MAX) NULL,
+	Limit int NULL,
+	IncUpdatedFeedContentValue int NOT NULL DEFAULT(1),
+	Counter int NULL,
+	VideoPhotoURL nvarchar(MAX) NULL,
+	VideoBaseUrl nvarchar(MAX) NULL,
+	VideoPublicKey nvarchar(MAX) NULL,
+	VideoSecretKey nvarchar(MAX) NULL, 
+	VideoFeedNumber int NULL,
+	PRIMARY KEY (Id)
+)
+  
+END
+
+
+
+ELSE
+
+BEGIN
+if not exists (select * from sys.columns where name = N'IncUpdatedFeedContentValue')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	PRIMARY KEY (Id)
+	
+	END
+if not exists (select * from sys.columns where name = N'VideoBaseUrl')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	VideoBaseUrl nvarchar(MAX) NULL
+	END
+if not exists (select * from sys.columns where name = N'VideoPhotoURL')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	VideoPhotoURL nvarchar(MAX) NULL
+	END
+if not exists (select * from sys.columns where name = N'IncUpdatedFeedContentValue')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	IncUpdatedFeedContentValue int NOT NULL DEFAULT(1)
+	END
+
+if not exists (select * from sys.columns where name = N'Counter')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	Counter int NULL
+	END
+
+if not exists (select * from sys.columns where name = N'VideoPublicKey')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	VideoPublicKey nvarchar(MAX) NULL
+	END
+
+if not exists (select * from sys.columns where name = N'VideoSecretKey')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	VideoSecretKey nvarchar(MAX) NULL
+	END 
+
+if not exists (select * from sys.columns where name = N'VideoFeedNumber')
+	BEGIN
+	ALTER TABLE dbo.Brafton 
+	ADD 
+	VideoFeedNumber int NULL
+	END
+
+	
+
+END	
+GO
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/

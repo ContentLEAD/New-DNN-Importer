@@ -1,0 +1,5 @@
+C:\websites\dnndev.me\DNN_Platform_07.03.02_Source\Website\DesktopModules\BraftonImporter7_02_02\obj\Debug\BraftonImporter7_02_02.csprojResolveAssemblyReference.cache
+C:\websites\dnndev.me\DNN_Platform_07.03.02_Source\Website\bin\BraftonImporter7_02_02.dll
+C:\websites\dnndev.me\DNN_Platform_07.03.02_Source\Website\bin\BraftonImporter7_02_02.pdb
+C:\websites\dnndev.me\DNN_Platform_07.03.02_Source\Website\DesktopModules\BraftonImporter7_02_02\obj\Debug\BraftonImporter7_02_02.dll
+C:\websites\dnndev.me\DNN_Platform_07.03.02_Source\Website\DesktopModules\BraftonImporter7_02_02\obj\Debug\BraftonImporter7_02_02.pdb
